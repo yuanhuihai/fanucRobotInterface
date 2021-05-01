@@ -87,11 +87,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addRobot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRobot.Designer.cs">
+      <DependentUpon>addRobot.cs</DependentUpon>
+    </Compile>
     <Compile Include="demo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="demo.Designer.cs">
       <DependentUpon>demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
     </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
@@ -101,8 +113,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addRobot.resx">
+      <DependentUpon>addRobot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="demo.resx">
       <DependentUpon>demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

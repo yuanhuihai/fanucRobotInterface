@@ -91,9 +91,32 @@ namespace fanucRobotInterface
 
         #endregion
 
+
+
+
+
+
         private void main_Load(object sender, EventArgs e)
         {
             getrobotinfo();
+        }
+
+        private void singleTest_Click(object sender, EventArgs e)
+        {
+            demo demotest = new demo();
+            demotest.Show();
+        }
+
+        private void helpMenu_Click(object sender, EventArgs e)
+        {
+            help helptest = new help();
+            helptest.Show();
+        }
+
+        private void addMenu_Click(object sender, EventArgs e)
+        {
+            addRobot add = new addRobot();
+           add.Show();
         }
     }
 }

@@ -65,16 +65,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.singleTest = new System.Windows.Forms.ToolStripMenuItem();
             this.allTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.robotConn = new System.Windows.Forms.Button();
-            this.robotName = new System.Windows.Forms.TextBox();
             this.robotIp = new System.Windows.Forms.TextBox();
+            this.robotName = new System.Windows.Forms.TextBox();
+            this.robotConn = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -414,48 +414,48 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addMenu,
             this.测试ToolStripMenuItem,
-            this.帮助ToolStripMenuItem});
+            this.helpMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2362, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(2362, 47);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // addMenu
             // 
-            this.addMenu.Image = ((System.Drawing.Image)(resources.GetObject("addMenu.Image")));
             this.addMenu.Name = "addMenu";
-            this.addMenu.Size = new System.Drawing.Size(129, 44);
+            this.addMenu.Size = new System.Drawing.Size(89, 43);
             this.addMenu.Text = "添加";
+            this.addMenu.Click += new System.EventHandler(this.addMenu_Click);
             // 
             // 测试ToolStripMenuItem
             // 
             this.测试ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.singleTest,
             this.allTest});
-            this.测试ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("测试ToolStripMenuItem.Image")));
             this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
-            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(129, 44);
+            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(89, 43);
             this.测试ToolStripMenuItem.Text = "测试";
-            // 
-            // 帮助ToolStripMenuItem
-            // 
-            this.帮助ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("帮助ToolStripMenuItem.Image")));
-            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(129, 44);
-            this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // singleTest
             // 
             this.singleTest.Name = "singleTest";
-            this.singleTest.Size = new System.Drawing.Size(396, 46);
+            this.singleTest.Size = new System.Drawing.Size(250, 46);
             this.singleTest.Text = "单个信息";
+            this.singleTest.Click += new System.EventHandler(this.singleTest_Click);
             // 
             // allTest
             // 
             this.allTest.Name = "allTest";
-            this.allTest.Size = new System.Drawing.Size(396, 46);
+            this.allTest.Size = new System.Drawing.Size(250, 46);
             this.allTest.Text = "全部信息";
+            // 
+            // helpMenu
+            // 
+            this.helpMenu.Name = "helpMenu";
+            this.helpMenu.Size = new System.Drawing.Size(89, 43);
+            this.helpMenu.Text = "帮助";
+            this.helpMenu.Click += new System.EventHandler(this.helpMenu_Click);
             // 
             // dataGridView1
             // 
@@ -477,28 +477,24 @@
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Location = new System.Drawing.Point(25, 98);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1018, 997);
+            this.groupBox4.Size = new System.Drawing.Size(1018, 1047);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "机器人信息列表";
             // 
-            // label1
+            // robotIp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 838);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 30);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "机器人名字：";
+            this.robotIp.Location = new System.Drawing.Point(213, 900);
+            this.robotIp.Name = "robotIp";
+            this.robotIp.Size = new System.Drawing.Size(396, 42);
+            this.robotIp.TabIndex = 30;
             // 
-            // label16
+            // robotName
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(30, 904);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 30);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Ip地址：";
+            this.robotName.Location = new System.Drawing.Point(213, 827);
+            this.robotName.Name = "robotName";
+            this.robotName.Size = new System.Drawing.Size(396, 42);
+            this.robotName.TabIndex = 29;
             // 
             // robotConn
             // 
@@ -510,25 +506,29 @@
             this.robotConn.UseVisualStyleBackColor = true;
             this.robotConn.Click += new System.EventHandler(this.robotConn_Click);
             // 
-            // robotName
+            // label16
             // 
-            this.robotName.Location = new System.Drawing.Point(213, 827);
-            this.robotName.Name = "robotName";
-            this.robotName.Size = new System.Drawing.Size(396, 42);
-            this.robotName.TabIndex = 29;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(30, 904);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(133, 30);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Ip地址：";
             // 
-            // robotIp
+            // label1
             // 
-            this.robotIp.Location = new System.Drawing.Point(213, 900);
-            this.robotIp.Name = "robotIp";
-            this.robotIp.Size = new System.Drawing.Size(396, 42);
-            this.robotIp.TabIndex = 30;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 838);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 30);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "机器人名字：";
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2362, 1159);
+            this.ClientSize = new System.Drawing.Size(2362, 1203);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -596,7 +596,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addMenu;
         private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpMenu;
         private System.Windows.Forms.ToolStripMenuItem singleTest;
         private System.Windows.Forms.ToolStripMenuItem allTest;
         private System.Windows.Forms.DataGridView dataGridView1;
