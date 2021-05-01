@@ -43,7 +43,8 @@ namespace fanucRobotInterface
 
         private void readxyzwpr_Click(object sender, EventArgs e)
         {
-            xyzwpr=robot.xyzwpr("127.0.0.1");
+            xyzwpr=robot.xyzwpr(robotIp.Text);
+            x.Text = xyzwpr[0];
         }
     }
 }
