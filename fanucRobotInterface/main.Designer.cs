@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.reshisalarm = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -62,7 +63,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.singleTest = new System.Windows.Forms.ToolStripMenuItem();
@@ -411,34 +412,37 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加ToolStripMenuItem,
+            this.addMenu,
             this.测试ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2362, 47);
+            this.menuStrip1.Size = new System.Drawing.Size(2362, 48);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // 添加ToolStripMenuItem
+            // addMenu
             // 
-            this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
-            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(89, 43);
-            this.添加ToolStripMenuItem.Text = "添加";
+            this.addMenu.Image = ((System.Drawing.Image)(resources.GetObject("addMenu.Image")));
+            this.addMenu.Name = "addMenu";
+            this.addMenu.Size = new System.Drawing.Size(129, 44);
+            this.addMenu.Text = "添加";
             // 
             // 测试ToolStripMenuItem
             // 
             this.测试ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.singleTest,
             this.allTest});
+            this.测试ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("测试ToolStripMenuItem.Image")));
             this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
-            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(89, 43);
+            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(129, 44);
             this.测试ToolStripMenuItem.Text = "测试";
             // 
             // 帮助ToolStripMenuItem
             // 
+            this.帮助ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("帮助ToolStripMenuItem.Image")));
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(89, 43);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(129, 44);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // singleTest
@@ -524,15 +528,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2362, 1381);
+            this.ClientSize = new System.Drawing.Size(2362, 1159);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "main";
-            this.Text = "main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C#-基于Fanuc Robot InterFace V3.0的简易监控系统";
             this.Load += new System.EventHandler(this.main_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -586,7 +594,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addMenu;
         private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem singleTest;
