@@ -38,13 +38,42 @@ namespace fanucRobotInterface
 
         private void readjoint_Click(object sender, EventArgs e)
         {
-            joint = robot.joint("127.0.0.1");
+            getjoint(robotIp.Text);
         }
 
         private void readxyzwpr_Click(object sender, EventArgs e)
         {
-            xyzwpr=robot.xyzwpr(robotIp.Text);
-            x.Text = xyzwpr[0];
+            getxyzwpr(robotIp.Text);
         }
+
+
+        public void getxyzwpr(string ip)
+        {
+            xyzwpr = robot.xyzwpr(ip);
+            x.Text = xyzwpr[0];
+            y.Text = xyzwpr[1];
+            z.Text = xyzwpr[2];
+            w.Text = xyzwpr[3];
+            p.Text = xyzwpr[4];
+            r.Text = xyzwpr[5];
+            eone.Text = xyzwpr[6];
+
+        }
+
+        public void getjoint(string ip)
+        {
+            joint = robot.joint(ip);
+            jone.Text = joint[0];
+            jtwo.Text = joint[1];
+            jthree.Text = joint[2];
+            jfour.Text = joint[3];
+            jfive.Text = joint[4];
+            jsix.Text = joint[5];
+            jseven.Text = joint[6];
+
+        }
+
+
+
     }
 }
