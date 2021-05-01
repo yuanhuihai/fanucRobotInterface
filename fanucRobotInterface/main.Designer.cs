@@ -461,6 +461,7 @@
             this.dataGridView1.RowTemplate.Height = 44;
             this.dataGridView1.Size = new System.Drawing.Size(889, 728);
             this.dataGridView1.TabIndex = 25;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox4
             // 
@@ -503,6 +504,7 @@
             this.robotConn.TabIndex = 28;
             this.robotConn.Text = "连接";
             this.robotConn.UseVisualStyleBackColor = true;
+            this.robotConn.Click += new System.EventHandler(this.robotConn_Click);
             // 
             // robotName
             // 
@@ -531,6 +533,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main";
             this.Text = "main";
+            this.Load += new System.EventHandler(this.main_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
