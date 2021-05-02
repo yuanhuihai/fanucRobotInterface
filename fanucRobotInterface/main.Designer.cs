@@ -70,11 +70,14 @@
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.refreshlist = new System.Windows.Forms.Button();
             this.robotIp = new System.Windows.Forms.TextBox();
             this.robotName = new System.Windows.Forms.TextBox();
             this.robotConn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.searchRobot = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -460,15 +463,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 44;
-            this.dataGridView1.Size = new System.Drawing.Size(889, 728);
+            this.dataGridView1.Size = new System.Drawing.Size(889, 632);
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.searchRobot);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.refreshlist);
             this.groupBox4.Controls.Add(this.robotIp);
             this.groupBox4.Controls.Add(this.robotName);
             this.groupBox4.Controls.Add(this.robotConn);
@@ -481,6 +487,16 @@
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "机器人信息列表";
+            // 
+            // refreshlist
+            // 
+            this.refreshlist.Location = new System.Drawing.Point(712, 822);
+            this.refreshlist.Name = "refreshlist";
+            this.refreshlist.Size = new System.Drawing.Size(203, 47);
+            this.refreshlist.TabIndex = 31;
+            this.refreshlist.Text = "刷新列表";
+            this.refreshlist.UseVisualStyleBackColor = true;
+            this.refreshlist.Click += new System.EventHandler(this.refreshlist_Click);
             // 
             // robotIp
             // 
@@ -524,6 +540,23 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "机器人名字：";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 75);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(253, 30);
+            this.label17.TabIndex = 32;
+            this.label17.Text = "请输入关键字搜索";
+            // 
+            // searchRobot
+            // 
+            this.searchRobot.Location = new System.Drawing.Point(275, 70);
+            this.searchRobot.Name = "searchRobot";
+            this.searchRobot.Size = new System.Drawing.Size(484, 42);
+            this.searchRobot.TabIndex = 33;
+            this.searchRobot.TextChanged += new System.EventHandler(this.searchRobot_TextChanged);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
@@ -540,7 +573,7 @@
             this.MinimizeBox = false;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C#-基于Fanuc Robot InterFace V3.0的简易监控系统";
+            this.Text = "C#-基于Fanuc Robot InterFace V3.0的简易位置报警监控系统";
             this.Load += new System.EventHandler(this.main_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -606,5 +639,8 @@
         private System.Windows.Forms.Button robotConn;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button refreshlist;
+        private System.Windows.Forms.TextBox searchRobot;
+        private System.Windows.Forms.Label label17;
     }
 }

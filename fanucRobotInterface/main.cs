@@ -104,19 +104,48 @@ namespace fanucRobotInterface
         private void singleTest_Click(object sender, EventArgs e)
         {
             demo demotest = new demo();
+            demotest.StartPosition = FormStartPosition.CenterScreen;
             demotest.Show();
         }
 
         private void helpMenu_Click(object sender, EventArgs e)
         {
             help helptest = new help();
+            helptest.StartPosition = FormStartPosition.CenterScreen;
             helptest.Show();
         }
 
         private void addMenu_Click(object sender, EventArgs e)
         {
             addRobot add = new addRobot();
-           add.Show();
+            add.StartPosition = FormStartPosition.CenterScreen;
+            add.Show();
         }
+
+        private void refreshlist_Click(object sender, EventArgs e)
+        {
+            getrobotinfo();
+        }
+
+
+        #region 20210502 搜索功能
+        private void searchRobot_TextChanged(object sender, EventArgs e)
+        {
+            //数据库连接
+            SQLiteConnection myCon;
+            myCon = new SQLiteConnection("Data Source=robot.sqlite;Version=3;");
+            myCon.Open();
+            //选择数据
+            string sql = "select * from robotInfo where ROBOTNAME like" + "'%" + searchRobot.Text + "%'";
+        
+            SQLiteDataAdapter mAdapter = new SQLiteDataAdapter(sql, myCon);
+            DataTable dt = new DataTable();
+            mAdapter.Fill(dt);
+            //绑定数据到DataGridView
+            dataGridView1.DataSource = dt;
+            //关闭数据库
+            myCon.Close();
+        }
+        #endregion
     }
 }

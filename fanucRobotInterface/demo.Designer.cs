@@ -43,16 +43,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.jseven = new System.Windows.Forms.Label();
             this.jone = new System.Windows.Forms.Label();
             this.jfour = new System.Windows.Forms.Label();
@@ -67,6 +57,16 @@
             this.p = new System.Windows.Forms.Label();
             this.z = new System.Windows.Forms.Label();
             this.r = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -237,98 +237,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "位置信息";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(51, 471);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 30);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "E1:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(51, 1002);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 30);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "J7:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(51, 590);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 30);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "J1:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(51, 806);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 30);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "J4:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(51, 661);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(58, 30);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "J2:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(51, 873);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 30);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "J5:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(51, 743);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 30);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "J3:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(51, 938);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 30);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "J6:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rescurralarm);
-            this.groupBox2.Location = new System.Drawing.Point(1260, 66);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(782, 292);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "实时报警";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.reshisalarm);
-            this.groupBox3.Location = new System.Drawing.Point(1260, 364);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(779, 809);
-            this.groupBox3.TabIndex = 20;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "历史报警";
-            // 
             // jseven
             // 
             this.jseven.AutoSize = true;
@@ -455,6 +363,98 @@
             this.r.TabIndex = 29;
             this.r.Text = "-";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(51, 1002);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(58, 30);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "J7:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(51, 590);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 30);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "J1:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(51, 806);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 30);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "J4:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(51, 661);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 30);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "J2:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(51, 873);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 30);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "J5:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(51, 743);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 30);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "J3:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(51, 938);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(58, 30);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "J6:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(51, 471);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 30);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "E1:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rescurralarm);
+            this.groupBox2.Location = new System.Drawing.Point(1260, 66);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(782, 292);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "实时报警";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.reshisalarm);
+            this.groupBox3.Location = new System.Drawing.Point(1260, 364);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(779, 809);
+            this.groupBox3.TabIndex = 20;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "历史报警";
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.readjoint);
@@ -480,7 +480,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "demo";
-            this.Text = "Form1";
+            this.Text = "连接测试";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
