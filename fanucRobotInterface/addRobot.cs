@@ -25,7 +25,7 @@ namespace fanucRobotInterface
             myCon = new SQLiteConnection("Data Source=robot.sqlite;Version=3;");
             myCon.Open();
 
-            string sql = "insert into robotInfo values ('"+line.Text+"', '"+robotname.Text+"','"+robotip.Text+"')";
+            string sql = "insert into robotInfo values ('"+line.Text+"', '"+robotname.Text+"','"+robotip.Text+"',NULL)";
             SQLiteCommand command = new SQLiteCommand(sql, myCon);
             command.ExecuteNonQuery();
             MessageBox.Show("添加成功！");

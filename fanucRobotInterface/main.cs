@@ -147,5 +147,20 @@ namespace fanucRobotInterface
             myCon.Close();
         }
         #endregion
+
+        private void delRobot_Click(object sender, EventArgs e)
+        {
+            //数据库连接
+            SQLiteConnection myCon;
+            myCon = new SQLiteConnection("Data Source=robot.sqlite;Version=3;");
+            myCon.Open();
+
+            string sql = "delete from robotInfo where ROBOTNAME='"+robotName.Text+"' and ROBOTIP='"+robotIp.Text+"' ";
+            SQLiteCommand command = new SQLiteCommand(sql, myCon);
+            command.ExecuteNonQuery();
+            MessageBox.Show("删除成功！");
+            myCon.Close();
+            getrobotinfo();
+        }
     }
 }

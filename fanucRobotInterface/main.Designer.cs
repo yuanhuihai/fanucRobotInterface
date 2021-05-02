@@ -71,19 +71,22 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.refreshlist = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.searchRobot = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.delRobot = new System.Windows.Forms.Button();
             this.robotIp = new System.Windows.Forms.TextBox();
             this.robotName = new System.Windows.Forms.TextBox();
             this.robotConn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.searchRobot = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -466,7 +469,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(26, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 44;
-            this.dataGridView1.Size = new System.Drawing.Size(889, 632);
+            this.dataGridView1.Size = new System.Drawing.Size(960, 593);
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -475,70 +478,23 @@
             this.groupBox4.Controls.Add(this.searchRobot);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.refreshlist);
-            this.groupBox4.Controls.Add(this.robotIp);
-            this.groupBox4.Controls.Add(this.robotName);
-            this.groupBox4.Controls.Add(this.robotConn);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Location = new System.Drawing.Point(25, 98);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1018, 1047);
+            this.groupBox4.Size = new System.Drawing.Size(1018, 777);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "机器人信息列表";
             // 
             // refreshlist
             // 
-            this.refreshlist.Location = new System.Drawing.Point(712, 822);
+            this.refreshlist.Location = new System.Drawing.Point(783, 65);
             this.refreshlist.Name = "refreshlist";
             this.refreshlist.Size = new System.Drawing.Size(203, 47);
             this.refreshlist.TabIndex = 31;
             this.refreshlist.Text = "刷新列表";
             this.refreshlist.UseVisualStyleBackColor = true;
             this.refreshlist.Click += new System.EventHandler(this.refreshlist_Click);
-            // 
-            // robotIp
-            // 
-            this.robotIp.Location = new System.Drawing.Point(213, 900);
-            this.robotIp.Name = "robotIp";
-            this.robotIp.Size = new System.Drawing.Size(396, 42);
-            this.robotIp.TabIndex = 30;
-            // 
-            // robotName
-            // 
-            this.robotName.Location = new System.Drawing.Point(213, 827);
-            this.robotName.Name = "robotName";
-            this.robotName.Size = new System.Drawing.Size(396, 42);
-            this.robotName.TabIndex = 29;
-            // 
-            // robotConn
-            // 
-            this.robotConn.Location = new System.Drawing.Point(712, 885);
-            this.robotConn.Name = "robotConn";
-            this.robotConn.Size = new System.Drawing.Size(203, 49);
-            this.robotConn.TabIndex = 28;
-            this.robotConn.Text = "连接";
-            this.robotConn.UseVisualStyleBackColor = true;
-            this.robotConn.Click += new System.EventHandler(this.robotConn_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(30, 904);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 30);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Ip地址：";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 838);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 30);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "机器人名字：";
             // 
             // label17
             // 
@@ -557,11 +513,77 @@
             this.searchRobot.TabIndex = 33;
             this.searchRobot.TextChanged += new System.EventHandler(this.searchRobot_TextChanged);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.delRobot);
+            this.groupBox5.Controls.Add(this.robotIp);
+            this.groupBox5.Controls.Add(this.robotName);
+            this.groupBox5.Controls.Add(this.robotConn);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Location = new System.Drawing.Point(25, 881);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1018, 288);
+            this.groupBox5.TabIndex = 35;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "请在上方列表中选择想要连接的机器人";
+            // 
+            // delRobot
+            // 
+            this.delRobot.Location = new System.Drawing.Point(25, 201);
+            this.delRobot.Name = "delRobot";
+            this.delRobot.Size = new System.Drawing.Size(354, 49);
+            this.delRobot.TabIndex = 40;
+            this.delRobot.Text = "删除选中的机器人信息";
+            this.delRobot.UseVisualStyleBackColor = true;
+            // 
+            // robotIp
+            // 
+            this.robotIp.Location = new System.Drawing.Point(203, 124);
+            this.robotIp.Name = "robotIp";
+            this.robotIp.Size = new System.Drawing.Size(396, 42);
+            this.robotIp.TabIndex = 39;
+            // 
+            // robotName
+            // 
+            this.robotName.Location = new System.Drawing.Point(203, 51);
+            this.robotName.Name = "robotName";
+            this.robotName.Size = new System.Drawing.Size(396, 42);
+            this.robotName.TabIndex = 38;
+            // 
+            // robotConn
+            // 
+            this.robotConn.Location = new System.Drawing.Point(702, 109);
+            this.robotConn.Name = "robotConn";
+            this.robotConn.Size = new System.Drawing.Size(203, 49);
+            this.robotConn.TabIndex = 37;
+            this.robotConn.Text = "连接";
+            this.robotConn.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(20, 128);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(133, 30);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Ip地址：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 30);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "机器人名字：";
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2362, 1203);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -586,6 +608,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -634,13 +658,15 @@
         private System.Windows.Forms.ToolStripMenuItem allTest;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button refreshlist;
+        private System.Windows.Forms.TextBox searchRobot;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button delRobot;
         private System.Windows.Forms.TextBox robotIp;
         private System.Windows.Forms.TextBox robotName;
         private System.Windows.Forms.Button robotConn;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button refreshlist;
-        private System.Windows.Forms.TextBox searchRobot;
-        private System.Windows.Forms.Label label17;
     }
 }
