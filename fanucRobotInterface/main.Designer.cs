@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.reshisalarm = new System.Windows.Forms.TextBox();
@@ -70,9 +71,9 @@
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.refreshlist = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
             this.searchRobot = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.refreshlist = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.delRobot = new System.Windows.Forms.Button();
             this.robotIp = new System.Windows.Forms.TextBox();
@@ -80,6 +81,9 @@
             this.robotConn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -87,6 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -486,15 +491,13 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "机器人信息列表";
             // 
-            // refreshlist
+            // searchRobot
             // 
-            this.refreshlist.Location = new System.Drawing.Point(783, 65);
-            this.refreshlist.Name = "refreshlist";
-            this.refreshlist.Size = new System.Drawing.Size(203, 47);
-            this.refreshlist.TabIndex = 31;
-            this.refreshlist.Text = "刷新列表";
-            this.refreshlist.UseVisualStyleBackColor = true;
-            this.refreshlist.Click += new System.EventHandler(this.refreshlist_Click);
+            this.searchRobot.Location = new System.Drawing.Point(275, 70);
+            this.searchRobot.Name = "searchRobot";
+            this.searchRobot.Size = new System.Drawing.Size(484, 42);
+            this.searchRobot.TabIndex = 33;
+            this.searchRobot.TextChanged += new System.EventHandler(this.searchRobot_TextChanged);
             // 
             // label17
             // 
@@ -505,13 +508,15 @@
             this.label17.TabIndex = 32;
             this.label17.Text = "请输入关键字搜索";
             // 
-            // searchRobot
+            // refreshlist
             // 
-            this.searchRobot.Location = new System.Drawing.Point(275, 70);
-            this.searchRobot.Name = "searchRobot";
-            this.searchRobot.Size = new System.Drawing.Size(484, 42);
-            this.searchRobot.TabIndex = 33;
-            this.searchRobot.TextChanged += new System.EventHandler(this.searchRobot_TextChanged);
+            this.refreshlist.Location = new System.Drawing.Point(783, 65);
+            this.refreshlist.Name = "refreshlist";
+            this.refreshlist.Size = new System.Drawing.Size(203, 47);
+            this.refreshlist.TabIndex = 31;
+            this.refreshlist.Text = "刷新列表";
+            this.refreshlist.UseVisualStyleBackColor = true;
+            this.refreshlist.Click += new System.EventHandler(this.refreshlist_Click);
             // 
             // groupBox5
             // 
@@ -578,6 +583,29 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "机器人名字：";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "PVC-Fanuc机器人信息";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 48);
+            // 
+            // exitMenuItem
+            // 
+            this.exitMenuItem.Name = "exitMenuItem";
+            this.exitMenuItem.Size = new System.Drawing.Size(154, 44);
+            this.exitMenuItem.Text = "退出";
+            this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
@@ -591,8 +619,6 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C#-基于Fanuc Robot InterFace V3.0的简易位置报警监控系统";
@@ -610,6 +636,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -668,5 +695,8 @@
         private System.Windows.Forms.Button robotConn;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitMenuItem;
     }
 }

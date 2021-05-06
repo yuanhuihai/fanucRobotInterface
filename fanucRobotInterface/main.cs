@@ -25,6 +25,49 @@ namespace fanucRobotInterface
             InitializeComponent();
         }
 
+        #region 加载窗体
+        private void main_Load(object sender, EventArgs e)
+        {
+            getrobotinfo();
+        }
+
+        #endregion
+
+        #region 右下角图标
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)//判断鼠标的按键
+            {
+                if (this.WindowState == FormWindowState.Normal)
+                {
+                    this.WindowState = FormWindowState.Minimized;
+
+                    this.Hide();
+                }
+                else if (this.WindowState == FormWindowState.Minimized)
+                {
+                    this.Show();
+                    this.WindowState = FormWindowState.Normal;
+                    this.Activate();
+                }
+            }
+
+        }
+
+        private void exitMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("你确定要退出程序吗？", "确认", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+            {
+                notifyIcon1.Visible = false;
+                this.Close();
+                this.Dispose();
+                Application.Exit();
+            }
+
+        }
+        #endregion
+
+        #region 连接机器人，获取信息
         private void robotConn_Click(object sender, EventArgs e)
         {
             getxyzwpr(robotIp.Text);
@@ -33,9 +76,9 @@ namespace fanucRobotInterface
             reshisalarm.Text=robot.readhisAlarm(robotIp.Text);
            
         }
+        #endregion
 
-
-
+        #region 方法-获取xyzwpr
         public void getxyzwpr(string ip)
         {
             xyzwpr = robot.xyzwpr(ip);
@@ -49,6 +92,9 @@ namespace fanucRobotInterface
 
         }
 
+        #endregion
+
+        #region 方法-获取joint
         public void getjoint(string ip)
         {
             joint = robot.joint(ip);
@@ -61,8 +107,7 @@ namespace fanucRobotInterface
             jseven.Text = joint[6];
 
         }
-
-
+        #endregion
 
         #region 从sqlite数据库获取机器人信息
         public void getrobotinfo()
@@ -91,23 +136,16 @@ namespace fanucRobotInterface
 
         #endregion
 
-
-
-
-
-
-        private void main_Load(object sender, EventArgs e)
-        {
-            getrobotinfo();
-        }
-
+        #region 菜单，单个测试
         private void singleTest_Click(object sender, EventArgs e)
         {
             demo demotest = new demo();
             demotest.StartPosition = FormStartPosition.CenterScreen;
             demotest.Show();
         }
+        #endregion
 
+        #region 菜单-帮助页面
         private void helpMenu_Click(object sender, EventArgs e)
         {
             help helptest = new help();
@@ -115,12 +153,18 @@ namespace fanucRobotInterface
             helptest.Show();
         }
 
+        #endregion
+
+        #region 菜单-新增机器人信息
         private void addMenu_Click(object sender, EventArgs e)
         {
             addRobot add = new addRobot();
             add.StartPosition = FormStartPosition.CenterScreen;
             add.Show();
         }
+
+        #endregion
+
 
         private void refreshlist_Click(object sender, EventArgs e)
         {
