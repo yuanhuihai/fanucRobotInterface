@@ -541,6 +541,7 @@
             this.delRobot.TabIndex = 40;
             this.delRobot.Text = "删除选中的机器人信息";
             this.delRobot.UseVisualStyleBackColor = true;
+            this.delRobot.Click += new System.EventHandler(this.delRobot_Click);
             // 
             // robotIp
             // 
@@ -564,6 +565,7 @@
             this.robotConn.TabIndex = 37;
             this.robotConn.Text = "连接";
             this.robotConn.UseVisualStyleBackColor = true;
+            this.robotConn.Click += new System.EventHandler(this.robotConn_Click);
             // 
             // label16
             // 
