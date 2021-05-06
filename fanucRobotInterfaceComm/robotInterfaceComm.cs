@@ -334,7 +334,7 @@ namespace fanucRobotInterfaceComm
                 strTmp = strTmp + mstrAlarm(ref mobjAlarmCurrent, ii);
             }
 
-
+            msubDisconnected();
             return strTmp;
 
 
@@ -356,7 +356,7 @@ namespace fanucRobotInterfaceComm
                 strTmp = strTmp + mstrAlarm(ref mobjAlarm, ii);
             }
 
-
+            msubDisconnected();
             return strTmp;
 
 
