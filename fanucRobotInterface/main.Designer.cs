@@ -559,11 +559,11 @@
             // 
             // robotConn
             // 
-            this.robotConn.Location = new System.Drawing.Point(702, 109);
+            this.robotConn.Location = new System.Drawing.Point(646, 120);
             this.robotConn.Name = "robotConn";
-            this.robotConn.Size = new System.Drawing.Size(203, 49);
+            this.robotConn.Size = new System.Drawing.Size(270, 49);
             this.robotConn.TabIndex = 37;
-            this.robotConn.Text = "连接";
+            this.robotConn.Text = "读取机器人信息";
             this.robotConn.UseVisualStyleBackColor = true;
             this.robotConn.Click += new System.EventHandler(this.robotConn_Click);
             // 

@@ -70,11 +70,12 @@ namespace fanucRobotInterface
         #region 连接机器人，获取信息
         private void robotConn_Click(object sender, EventArgs e)
         {
+          
             getxyzwpr(robotIp.Text);
             getjoint(robotIp.Text);
             rescurralarm.Text=robot.readcurrAlarm(robotIp.Text);
             reshisalarm.Text=robot.readhisAlarm(robotIp.Text);
-           
+            MessageBox.Show("信息获取成功！");
         }
         #endregion
 
