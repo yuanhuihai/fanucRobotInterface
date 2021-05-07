@@ -125,6 +125,7 @@ namespace fanucRobotInterface
             mAdapter.Fill(dt);
             //绑定数据到DataGridView
             dataGridView1.DataSource = dt;
+            dataGridView1.RowHeadersVisible = false;
             //关闭数据库
            myCon.Close();
 
