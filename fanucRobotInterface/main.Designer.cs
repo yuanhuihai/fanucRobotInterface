@@ -109,6 +109,8 @@
             // 
             // reshisalarm
             // 
+            this.reshisalarm.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.reshisalarm.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.reshisalarm.Location = new System.Drawing.Point(36, 54);
             this.reshisalarm.Multiline = true;
             this.reshisalarm.Name = "reshisalarm";
@@ -127,6 +129,8 @@
             // 
             // rescurralarm
             // 
+            this.rescurralarm.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.rescurralarm.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.rescurralarm.Location = new System.Drawing.Point(36, 50);
             this.rescurralarm.Multiline = true;
             this.rescurralarm.Name = "rescurralarm";
