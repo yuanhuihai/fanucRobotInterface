@@ -210,5 +210,7 @@ namespace fanucRobotInterface
             myCon.Close();
             getrobotinfo();
         }
+
+       
     }
 }

@@ -101,8 +101,10 @@
             // 
             this.groupBox3.Controls.Add(this.reshisalarm);
             this.groupBox3.Location = new System.Drawing.Point(1548, 360);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(779, 809);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(780, 810);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "历史报警";
@@ -111,17 +113,20 @@
             // 
             this.reshisalarm.BackColor = System.Drawing.SystemColors.MenuBar;
             this.reshisalarm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.reshisalarm.Location = new System.Drawing.Point(36, 54);
+            this.reshisalarm.Location = new System.Drawing.Point(35, 55);
+            this.reshisalarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reshisalarm.Multiline = true;
             this.reshisalarm.Name = "reshisalarm";
-            this.reshisalarm.Size = new System.Drawing.Size(732, 731);
+            this.reshisalarm.Size = new System.Drawing.Size(732, 732);
             this.reshisalarm.TabIndex = 6;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rescurralarm);
             this.groupBox2.Location = new System.Drawing.Point(1548, 62);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Size = new System.Drawing.Size(782, 292);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -131,7 +136,8 @@
             // 
             this.rescurralarm.BackColor = System.Drawing.SystemColors.MenuBar;
             this.rescurralarm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rescurralarm.Location = new System.Drawing.Point(36, 50);
+            this.rescurralarm.Location = new System.Drawing.Point(35, 50);
+            this.rescurralarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rescurralarm.Multiline = true;
             this.rescurralarm.Name = "rescurralarm";
             this.rescurralarm.Size = new System.Drawing.Size(732, 229);
@@ -167,9 +173,11 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(1101, 63);
+            this.groupBox1.Location = new System.Drawing.Point(1100, 62);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(389, 1106);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(390, 1105);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "位置信息";
@@ -177,7 +185,8 @@
             // jseven
             // 
             this.jseven.AutoSize = true;
-            this.jseven.Location = new System.Drawing.Point(121, 1003);
+            this.jseven.Location = new System.Drawing.Point(120, 1002);
+            this.jseven.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jseven.Name = "jseven";
             this.jseven.Size = new System.Drawing.Size(28, 30);
             this.jseven.TabIndex = 39;
@@ -186,7 +195,8 @@
             // jone
             // 
             this.jone.AutoSize = true;
-            this.jone.Location = new System.Drawing.Point(121, 591);
+            this.jone.Location = new System.Drawing.Point(120, 590);
+            this.jone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jone.Name = "jone";
             this.jone.Size = new System.Drawing.Size(28, 30);
             this.jone.TabIndex = 33;
@@ -195,7 +205,8 @@
             // jfour
             // 
             this.jfour.AutoSize = true;
-            this.jfour.Location = new System.Drawing.Point(121, 807);
+            this.jfour.Location = new System.Drawing.Point(120, 808);
+            this.jfour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jfour.Name = "jfour";
             this.jfour.Size = new System.Drawing.Size(28, 30);
             this.jfour.TabIndex = 38;
@@ -204,7 +215,8 @@
             // jtwo
             // 
             this.jtwo.AutoSize = true;
-            this.jtwo.Location = new System.Drawing.Point(121, 662);
+            this.jtwo.Location = new System.Drawing.Point(120, 662);
+            this.jtwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jtwo.Name = "jtwo";
             this.jtwo.Size = new System.Drawing.Size(28, 30);
             this.jtwo.TabIndex = 34;
@@ -213,7 +225,8 @@
             // jfive
             // 
             this.jfive.AutoSize = true;
-            this.jfive.Location = new System.Drawing.Point(121, 874);
+            this.jfive.Location = new System.Drawing.Point(120, 875);
+            this.jfive.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jfive.Name = "jfive";
             this.jfive.Size = new System.Drawing.Size(28, 30);
             this.jfive.TabIndex = 37;
@@ -222,7 +235,8 @@
             // jthree
             // 
             this.jthree.AutoSize = true;
-            this.jthree.Location = new System.Drawing.Point(121, 744);
+            this.jthree.Location = new System.Drawing.Point(120, 745);
+            this.jthree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jthree.Name = "jthree";
             this.jthree.Size = new System.Drawing.Size(28, 30);
             this.jthree.TabIndex = 35;
@@ -231,7 +245,8 @@
             // jsix
             // 
             this.jsix.AutoSize = true;
-            this.jsix.Location = new System.Drawing.Point(121, 939);
+            this.jsix.Location = new System.Drawing.Point(120, 940);
+            this.jsix.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jsix.Name = "jsix";
             this.jsix.Size = new System.Drawing.Size(28, 30);
             this.jsix.TabIndex = 36;
@@ -240,7 +255,8 @@
             // eone
             // 
             this.eone.AutoSize = true;
-            this.eone.Location = new System.Drawing.Point(121, 472);
+            this.eone.Location = new System.Drawing.Point(120, 472);
+            this.eone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.eone.Name = "eone";
             this.eone.Size = new System.Drawing.Size(28, 30);
             this.eone.TabIndex = 32;
@@ -249,7 +265,8 @@
             // x
             // 
             this.x.AutoSize = true;
-            this.x.Location = new System.Drawing.Point(121, 60);
+            this.x.Location = new System.Drawing.Point(120, 60);
+            this.x.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.x.Name = "x";
             this.x.Size = new System.Drawing.Size(28, 30);
             this.x.TabIndex = 26;
@@ -258,7 +275,8 @@
             // w
             // 
             this.w.AutoSize = true;
-            this.w.Location = new System.Drawing.Point(121, 276);
+            this.w.Location = new System.Drawing.Point(120, 275);
+            this.w.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.w.Name = "w";
             this.w.Size = new System.Drawing.Size(28, 30);
             this.w.TabIndex = 31;
@@ -267,7 +285,8 @@
             // y
             // 
             this.y.AutoSize = true;
-            this.y.Location = new System.Drawing.Point(121, 131);
+            this.y.Location = new System.Drawing.Point(120, 130);
+            this.y.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.y.Name = "y";
             this.y.Size = new System.Drawing.Size(28, 30);
             this.y.TabIndex = 27;
@@ -276,7 +295,8 @@
             // p
             // 
             this.p.AutoSize = true;
-            this.p.Location = new System.Drawing.Point(121, 343);
+            this.p.Location = new System.Drawing.Point(120, 342);
+            this.p.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.p.Name = "p";
             this.p.Size = new System.Drawing.Size(28, 30);
             this.p.TabIndex = 30;
@@ -285,7 +305,8 @@
             // z
             // 
             this.z.AutoSize = true;
-            this.z.Location = new System.Drawing.Point(121, 213);
+            this.z.Location = new System.Drawing.Point(120, 212);
+            this.z.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.z.Name = "z";
             this.z.Size = new System.Drawing.Size(28, 30);
             this.z.TabIndex = 28;
@@ -294,7 +315,8 @@
             // r
             // 
             this.r.AutoSize = true;
-            this.r.Location = new System.Drawing.Point(121, 408);
+            this.r.Location = new System.Drawing.Point(120, 408);
+            this.r.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.r.Name = "r";
             this.r.Size = new System.Drawing.Size(28, 30);
             this.r.TabIndex = 29;
@@ -303,7 +325,8 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(51, 1002);
+            this.label9.Location = new System.Drawing.Point(50, 1002);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 30);
             this.label9.TabIndex = 25;
@@ -312,7 +335,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(51, 590);
+            this.label10.Location = new System.Drawing.Point(50, 590);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 30);
             this.label10.TabIndex = 19;
@@ -321,7 +345,8 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(51, 806);
+            this.label11.Location = new System.Drawing.Point(50, 805);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 30);
             this.label11.TabIndex = 24;
@@ -330,7 +355,8 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(51, 661);
+            this.label12.Location = new System.Drawing.Point(50, 660);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(58, 30);
             this.label12.TabIndex = 20;
@@ -339,7 +365,8 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(51, 873);
+            this.label13.Location = new System.Drawing.Point(50, 872);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 30);
             this.label13.TabIndex = 23;
@@ -348,7 +375,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(51, 743);
+            this.label14.Location = new System.Drawing.Point(50, 742);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 30);
             this.label14.TabIndex = 21;
@@ -357,7 +385,8 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(51, 938);
+            this.label15.Location = new System.Drawing.Point(50, 938);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(58, 30);
             this.label15.TabIndex = 22;
@@ -366,7 +395,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(51, 471);
+            this.label8.Location = new System.Drawing.Point(50, 470);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 30);
             this.label8.TabIndex = 18;
@@ -375,7 +405,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 59);
+            this.label2.Location = new System.Drawing.Point(50, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 30);
             this.label2.TabIndex = 12;
@@ -384,7 +415,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 275);
+            this.label7.Location = new System.Drawing.Point(50, 275);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 30);
             this.label7.TabIndex = 17;
@@ -393,7 +425,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 130);
+            this.label3.Location = new System.Drawing.Point(50, 130);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 30);
             this.label3.TabIndex = 13;
@@ -402,7 +435,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 342);
+            this.label6.Location = new System.Drawing.Point(50, 342);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 30);
             this.label6.TabIndex = 16;
@@ -411,7 +445,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 212);
+            this.label4.Location = new System.Drawing.Point(50, 212);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 30);
             this.label4.TabIndex = 14;
@@ -420,7 +455,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 407);
+            this.label5.Location = new System.Drawing.Point(50, 408);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 30);
             this.label5.TabIndex = 15;
@@ -435,7 +471,8 @@
             this.helpMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2362, 47);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(2415, 47);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -479,10 +516,11 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 161);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 160);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 44;
-            this.dataGridView1.Size = new System.Drawing.Size(960, 593);
+            this.dataGridView1.Size = new System.Drawing.Size(960, 592);
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -493,8 +531,10 @@
             this.groupBox4.Controls.Add(this.refreshlist);
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Location = new System.Drawing.Point(25, 98);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1018, 777);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(1018, 778);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "机器人信息列表";
@@ -502,6 +542,7 @@
             // searchRobot
             // 
             this.searchRobot.Location = new System.Drawing.Point(275, 70);
+            this.searchRobot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchRobot.Name = "searchRobot";
             this.searchRobot.Size = new System.Drawing.Size(484, 42);
             this.searchRobot.TabIndex = 33;
@@ -510,7 +551,8 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 75);
+            this.label17.Location = new System.Drawing.Point(20, 75);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(253, 30);
             this.label17.TabIndex = 32;
@@ -518,9 +560,10 @@
             // 
             // refreshlist
             // 
-            this.refreshlist.Location = new System.Drawing.Point(783, 65);
+            this.refreshlist.Location = new System.Drawing.Point(782, 65);
+            this.refreshlist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.refreshlist.Name = "refreshlist";
-            this.refreshlist.Size = new System.Drawing.Size(203, 47);
+            this.refreshlist.Size = new System.Drawing.Size(202, 48);
             this.refreshlist.TabIndex = 31;
             this.refreshlist.Text = "刷新列表";
             this.refreshlist.UseVisualStyleBackColor = true;
@@ -534,8 +577,10 @@
             this.groupBox5.Controls.Add(this.robotConn);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Location = new System.Drawing.Point(25, 881);
+            this.groupBox5.Location = new System.Drawing.Point(25, 880);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Size = new System.Drawing.Size(1018, 288);
             this.groupBox5.TabIndex = 35;
             this.groupBox5.TabStop = false;
@@ -543,9 +588,10 @@
             // 
             // delRobot
             // 
-            this.delRobot.Location = new System.Drawing.Point(25, 201);
+            this.delRobot.Location = new System.Drawing.Point(25, 200);
+            this.delRobot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delRobot.Name = "delRobot";
-            this.delRobot.Size = new System.Drawing.Size(354, 49);
+            this.delRobot.Size = new System.Drawing.Size(355, 50);
             this.delRobot.TabIndex = 40;
             this.delRobot.Text = "删除选中的机器人信息";
             this.delRobot.UseVisualStyleBackColor = true;
@@ -553,23 +599,26 @@
             // 
             // robotIp
             // 
-            this.robotIp.Location = new System.Drawing.Point(203, 124);
+            this.robotIp.Location = new System.Drawing.Point(202, 125);
+            this.robotIp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.robotIp.Name = "robotIp";
             this.robotIp.Size = new System.Drawing.Size(396, 42);
             this.robotIp.TabIndex = 39;
             // 
             // robotName
             // 
-            this.robotName.Location = new System.Drawing.Point(203, 51);
+            this.robotName.Location = new System.Drawing.Point(202, 50);
+            this.robotName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.robotName.Name = "robotName";
             this.robotName.Size = new System.Drawing.Size(396, 42);
             this.robotName.TabIndex = 38;
             // 
             // robotConn
             // 
-            this.robotConn.Location = new System.Drawing.Point(646, 120);
+            this.robotConn.Location = new System.Drawing.Point(645, 120);
+            this.robotConn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.robotConn.Name = "robotConn";
-            this.robotConn.Size = new System.Drawing.Size(270, 49);
+            this.robotConn.Size = new System.Drawing.Size(270, 50);
             this.robotConn.TabIndex = 37;
             this.robotConn.Text = "读取机器人信息";
             this.robotConn.UseVisualStyleBackColor = true;
@@ -579,6 +628,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(20, 128);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(133, 30);
             this.label16.TabIndex = 36;
@@ -588,6 +638,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 30);
             this.label1.TabIndex = 35;
@@ -621,9 +672,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1226);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1204);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(2362, 44);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(2415, 44);
             this.statusStrip1.TabIndex = 36;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -638,7 +690,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2362, 1270);
+            this.ClientSize = new System.Drawing.Size(2415, 1248);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -648,6 +700,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C#-基于Fanuc Robot InterFace V3.0的简易位置报警监控系统";
