@@ -29,6 +29,8 @@ namespace fanucRobotInterface
         private void main_Load(object sender, EventArgs e)
         {
             getrobotinfo();
+      
+            toolStripStatusLabel1.Text ="版本:V"+System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
 
         #endregion
